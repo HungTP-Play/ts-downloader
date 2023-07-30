@@ -49,6 +49,8 @@ export type DownloaderConfig = {
      * 
      * You should use `partsDeterminer` either `chunkSizeDeterminer`, but not both.
      * 
+     * You should prefer `partsDeterminer` over `chunkSizeDeterminer` because it will safer for connection errors.
+     * 
      * Default we will use `partsDeterminer` to determine the number of chunks.
      */
     partDeterminer: PartDeterminer;
